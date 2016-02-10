@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href ="stylesheet.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<style> 
+		body {background-image: url("http://orig06.deviantart.net/8f25/f/2014/300/b/0/dota2_fanart01_by_crow_god-d84ek06.jpg")
+			
+		</style>
+	</head>
+	<body>
+
+		<script>
+	function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+    	hours   = parseInt(timer / 24, 10);
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes = 60 * 8.45,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
+		</script>
+
+		<nav id="access" role="navigation"style="font-family:myFirstFont;" >
+			<div class="menu-header-menu-container">
+				<ul id="menu-header-menu" class="menu">
+					<li id="menu-item-41" class="menu-item-1">
+					<a href="http://www.dota2.com/heroes/" style="font-family:Lobster;">heroes</a>
+					</li>
+					<li id="menu-item-35" class="menu-item-2">
+					<a href="http://www.dota2.com/items/" style="font-family:Lobster">Items</a>
+					</li>
+					<li id="menu-item-34" class="menu-item-3">
+					<a href="http://steamcommunity.com/app/570/guides" style="font-family:Lobster">Guides</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<div class="recommended" style="font-family:Lobster;">
+			<p style="font-family:Lobster;">recommended</p>
+		</div>
+		
+		<div class="ti5" style="font-family:Lobster;">
+			<p style="font-family:Lobster;">TI5 Champions</p>
+		</div>
+		
+		<div class ="video">
+			<iframe width="1280" height="720" src="https://www.youtube.com/embed/DPhIwx6E4Wo?rel=0&amp;controls=0&amp;autoplay=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+		
+		<div class="twitch">
+			<li class="twitch1">
+				<iframe src="http://player.twitch.tv/?channel=gspotdota&muted=true" frameborder="0" scrolling="no" height="192" width="350"></iframe>
+			</li>
+			<li class="twitch2">
+				<iframe src="http://player.twitch.tv/?channel=beyondthesummit&muted=true" frameborder="0" scrolling="no" height="192" width="350" autoplay=0></iframe>
+			</li>
+			<li class="twitch3">
+				<iframe src="http://player.twitch.tv/?channel=y0nd&muted=true" frameborder="0" scrolling="no" height="192" width="350"></iframe>
+			</li>
+			<li class="twitch4">
+				<iframe src="http://player.twitch.tv/?channel=ybicanoooobov&muted=true" frameborder="0" scrolling="no" height="192" width="350"></iframe>
+			</li>
+		</div>
+		<meta http-equiv="refresh" content="507;url=http://blog.dota2.com"/>	
+		
+	</body>
+	<footer>
+		<div class="fullscreen" style="font-family:Lobster;">
+		<p style="font-family:Lobster;">Please fullscreen browser for optimal viewing. Will be redirected in <span id="time"></span></p>
+		</div>
+	</footer>
+
+</html>
