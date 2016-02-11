@@ -1,129 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<link type="text/css" rel="stylesheet" href ="stylesheet.css"/>
+		<link type="text/css" rel="stylesheet" href ="app.css"/>
 		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-		<style> 
-		body {background-image: url("http://orig06.deviantart.net/8f25/f/2014/300/b/0/dota2_fanart01_by_crow_god-d84ek06.jpg")
-			
+        <body style="background-color:lightgrey;">
+        <style> 
+		
 		</style>
 
 				<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
-		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-		<link rel="manifest" href="/manifest.json">
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="images/favicon-194x194.png" sizes="194x194">
+		<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="images/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="images/manifest.json">
+		<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="apple-mobile-web-app-title" content="D2Predictions">
 		<meta name="application-name" content="D2Predictions">
 		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+		<meta name="msapplication-TileImage" content="images/mstile-144x144.png">
 		<meta name="theme-color" content="#aae8bc">
 	</head>
 	<body>
-		<script>
-		  window.fbAsyncInit = function() {
-		    FB.init({
-		      appId      : 'your-app-id',
-		      xfbml      : true,
-		      version    : 'v2.5'
-		    });
-		  };
-
-		  (function(d, s, id){
-		     var js, fjs = d.getElementsByTagName(s)[0];
-		     if (d.getElementById(id)) {return;}
-		     js = d.createElement(s); js.id = id;
-		     js.src = "//connect.facebook.net/en_US/sdk.js";
-		     fjs.parentNode.insertBefore(js, fjs);
-		   }(document, 'script', 'facebook-jssdk'));
-		</script>
-		<script>
-	function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-    	hours   = parseInt(timer / 24, 10);
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = duration;
-        }
-    }, 1000);
-}
-
-window.onload = function () {
-    var fiveMinutes = 60 * 8.45,
-        display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
-};
-		</script>
-
-		<nav id="access" role="navigation"style="font-family:myFirstFont;" >
-			<div class="menu-header-menu-container">
-				<ul id="menu-header-menu" class="menu">
-					<li id="menu-item-41" class="menu-item-1">
-					<a href="http://www.dota2.com/heroes/" style="font-family:Lobster;">heroes</a>
-					</li>
-					<li id="menu-item-35" class="menu-item-2">
+        <input type="checkbox" id="sidebartoggler" name="" value="">
+        
+        <div class="page-wrap">
+            
+        <div class="boxes">
+            <div class="box">
+                <img src="images/dota2lounge.png"/>
+            </div>
+        </div>
+            
+        <label for="sidebartoggler" class="toggle">&#9776;</label>
+            
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="http://www.dota2.com/heroes/" style="font-family:Lobster;">Heroes</a>
+                </li>
+                <li>
 					<a href="http://www.dota2.com/items/" style="font-family:Lobster">Items</a>
-					</li>
-					<li id="menu-item-34" class="menu-item-3">
+                </li>
+                <li>
 					<a href="http://steamcommunity.com/app/570/guides" style="font-family:Lobster">Guides</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		
-		<div class="recommended" style="font-family:Lobster;">
-			<p style="font-family:Lobster;">recommended</p>
+                </li>
+            </ul>
+        </div>
 		</div>
-		
-		<div class="ti5" style="font-family:Lobster;">
-			<p style="font-family:Lobster;">TI5 Champions</p>
-		</div>
-		
-		<div class ="video">
-			<iframe width="1100" height="650" src="https://www.youtube.com/embed/DPhIwx6E4Wo?rel=0&amp;controls=0&amp;autoplay=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-		</div>
-		
-		<div class="twitch">
-			<li class="twitch1">
-				<iframe src="http://player.twitch.tv/?channel=gspotdota&muted=true" frameborder="0" scrolling="no" height="192" width="350"></iframe>
-			</li>
-			<li class="twitch2">
-				<iframe src="http://player.twitch.tv/?channel=beyondthesummit&muted=true" frameborder="0" scrolling="no" height="192" width="350" autoplay=0></iframe>
-			</li>
-			<li class="twitch3">
-				<iframe src="http://player.twitch.tv/?channel=y0nd&muted=true" frameborder="0" scrolling="no" height="192" width="350"></iframe>
-			</li>
-			<li class="twitch4">
-				<iframe src="http://player.twitch.tv/?channel=ybicanoooobov&muted=true" frameborder="0" scrolling="no" height="192" width="350"></iframe>
-			</li>
-		</div>
-		<meta http-equiv="refresh" content="507;url=http://blog.dota2.com"/>	
-		
 	</body>
-	<footer>
-		<div class="fb-page" data-href="https://www.facebook.com/D2LoungePredictions/?fref=ts" data-width="500" data-height="153" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/D2LoungePredictions/?fref=ts"><a href="https://www.facebook.com/D2LoungePredictions/?fref=ts">D2Lounge Predictions</a></blockquote></div></div>
-		<div class="fullscreen" style="font-family:Lobster;">
-		<p style="font-family:Lobster;">Please fullscreen browser for optimal viewing. Will be redirected in <span id="time"></span></p>
-		</div>
-	</footer>
-
+    
 </html>
