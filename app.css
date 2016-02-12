@@ -1,4 +1,6 @@
 .box {
+  margin: 0;
+  padding: 0;
   z-index: 1;
   position: fixed;
   top: 0px;
@@ -7,12 +9,24 @@
   left: 0;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1); }
+  transition: all 0.5s ease-in-out; }
+  .box video {
+    z-index: 0; }
+  .box p {
+    z-index: 2;
+    font-size: 120px;
+    font-family: "Lobster";
+    position: fixed;
+    top: 300px;
+    right: 0px;
+    bottom: 0px;
+    left: 700px;
+    height: 200px;
+    width: 600px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.5; }
 
 .toggle {
   position: fixed;
@@ -35,11 +49,14 @@
   top: 0px;
   right: 0;
   bottom: 0px;
-  left: 0px;
+  left: -190px;
   width: 120px;
   padding: 30px;
   background: #333;
-  z-index: 0; }
+  z-index: 3;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
   .sidebar li {
     font-family: "Lobster";
     font-size: 30px;
@@ -58,11 +75,10 @@
   #sidebartoggler:checked + .page-wrap .toggle {
     left: 200px; }
   #sidebartoggler:checked + .page-wrap .box {
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    -o-transform: scale(0.7);
-    transform: scale(0.7);
-    padding-left: 400px; }
+    padding-left: 160px; }
+    #sidebartoggler:checked + .page-wrap .box p {
+      padding-left: 160px; }
+  #sidebartoggler:checked + .page-wrap .sidebar {
+    padding-left: 210px; }
 
 /*# sourceMappingURL=app.css.map */

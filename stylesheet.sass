@@ -4,10 +4,25 @@
 //@import '3-layouts/layouts-dir'
 
 .box
+    margin: 0
+    padding: 0
     z-index: 1
     +position (fixed, 0px 0px 0px 0)
     @include transition(all 0.5s ease-in-out)
-    +transform(scale(1))
+    //+transform(scale(1))
+    
+    video
+        z-index: 0
+    
+    p
+        z-index: 2
+        font-size: 120px
+        font-family: 'Lobster'
+        +position (fixed, 300px 0px 0px 700px)
+        height: 200px
+        width: 600px
+        @include transition(all 0.5s ease-in-out)
+        opacity: 0.5
 
 .toggle
     +position(fixed,20px 0 0 20px)
@@ -20,11 +35,12 @@
     @include transition(all 0.5s ease-in-out)
 
 .sidebar
-    +position(fixed, 0px 0 0px 0px)
+    +position(fixed, 0px 0 0px -190px)
     width: 120px
     padding: 30px
     background: #333
-    z-index: 0
+    z-index: 3
+    @include transition(all 0.5s ease-in-out)
     
     li
         font-family: 'Lobster'
@@ -49,5 +65,12 @@
             left: 200px
             
         .box 
-            +transform(scale(0.7))
-            padding-left: 400px
+            //+transform(scale(0.7))
+            padding-left: 160px
+            
+            p
+                padding-left: 160px
+        
+        .sidebar
+            padding-left: 210px
+            
